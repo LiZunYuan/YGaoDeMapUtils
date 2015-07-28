@@ -41,7 +41,7 @@
     //设置Key
     [YGaoDeMapUtils setApiKey:@"aa87695ed0f4d1afaf3919a966ff772e"];
     
-    
+    //只获得用户经纬度
     [YGaoDeMapUtils getUserCurrentLocationInfoSuccessBlock:^(YLocationInfo *yLocationInfo) {
         NSLog(@"1查");
     } failure:^(NSError *error) {
@@ -50,11 +50,13 @@
     
     
     
+    //获得用户经纬度之外  再获得额外信息，如地区编码，城市等信息
     [YGaoDeMapUtils getUserCurrentLocationMoreInfoRequireExtension:NO successBlock:^(YLocationInfo *locationInfo) {
         NSLog(@"2查");
     } failure:^(NSError *error) {
         NSLog(@"2%@",error);
     }];
+    
     
     [YGaoDeMapUtils getUserCurrentLocationMoreInfoRequireExtension:YES successBlock:^(YLocationInfo *locationInfo) {
         NSLog(@"3查");
