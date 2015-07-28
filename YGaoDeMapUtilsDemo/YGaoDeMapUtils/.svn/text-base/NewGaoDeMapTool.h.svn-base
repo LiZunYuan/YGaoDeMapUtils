@@ -1,0 +1,33 @@
+//
+//  NewGaoDeMapTool.h
+//  deliveryMan
+//
+//  Created by lizy on 15/7/27.
+//  Copyright (c) 2015年 lizy. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "LocationInfo.h"
+
+typedef void (^NewGaoDeMapSuccessBlock)(LocationInfo* locationInfo);
+typedef void (^NewGaoDeMapFailureBlock)(NSError* error);
+typedef void (^NewGaoDeMapPOISuccessBlock)(NSArray* poiArray);
+
+@interface NewGaoDeMapTool : NSObject
+
+//获得用户当前位置信息
++(instancetype)getUserCurrentLocationMoreInfoRequireExtension:(BOOL)requireExtension successBlock:(NewGaoDeMapSuccessBlock)successBlock failure:(NewGaoDeMapFailureBlock)failureBlock;
+
+//获得用户当前位置信息
++(instancetype)getUserCurrentLocationInfoSuccessBlock:(NewGaoDeMapSuccessBlock)successBlock failure:(NewGaoDeMapFailureBlock)failureBlock;
+
+
++(instancetype)queryLocationInfoWithAddressName:(NSString *)addressName successBlock:(NewGaoDeMapSuccessBlock)successBlock failure:(NewGaoDeMapFailureBlock)failureBlock;
+
+//搜索
++(instancetype)queryPoiByKeyword:(NSString *)keyword cityInfo:(NSString*)cityInfo requireExtension:(BOOL)requireExtension  successBlock:(NewGaoDeMapPOISuccessBlock)successBlock;
+
+
+//周边搜索
++(instancetype)queryPoiByAroundWithLatitude:(NSString*)latitude andLongitude:(NSString*)longitude cityInfo:(NSString*)cityInfo requireExtension:(BOOL)requireExtension successBlock:(NewGaoDeMapPOISuccessBlock)successBlock failure:(NewGaoDeMapFailureBlock)failureBlock;
+@end

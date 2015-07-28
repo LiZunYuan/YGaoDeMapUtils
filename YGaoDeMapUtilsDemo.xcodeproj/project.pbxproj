@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6239B04C1B6735570063AC08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239B04B1B6735570063AC08 /* main.m */; };
+		6239B04F1B6735570063AC08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239B04E1B6735570063AC08 /* AppDelegate.m */; };
+		6239B0521B6735570063AC08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239B0511B6735570063AC08 /* ViewController.m */; };
+		6239B0551B6735570063AC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6239B0531B6735570063AC08 /* Main.storyboard */; };
+		6239B0571B6735570063AC08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6239B0561B6735570063AC08 /* Images.xcassets */; };
+		6239B05A1B6735570063AC08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6239B0581B6735570063AC08 /* LaunchScreen.xib */; };
+		6239B0661B6735570063AC08 /* YGaoDeMapUtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239B0651B6735570063AC08 /* YGaoDeMapUtilsDemoTests.m */; };
+		6239B0701B6735950063AC08 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B06F1B6735950063AC08 /* libstdc++.6.0.9.dylib */; };
+		6239B0721B6735990063AC08 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B0711B6735990063AC08 /* libz.dylib */; };
+		6239B0741B67359D0063AC08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B0731B67359D0063AC08 /* CoreLocation.framework */; };
+		6239B0761B6735A10063AC08 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B0751B6735A10063AC08 /* CoreFoundation.framework */; };
+		6239B0781B6735A50063AC08 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B0771B6735A50063AC08 /* MapKit.framework */; };
+		6239B0851B6735E20063AC08 /* YGaoDeMapUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239B0821B6735E20063AC08 /* YGaoDeMapUtils.m */; };
+		6239B0861B6735E20063AC08 /* YLocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239B0841B6735E20063AC08 /* YLocationInfo.m */; };
+		6239B08C1B6735FC0063AC08 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6239B0891B6735FC0063AC08 /* AMap.bundle */; };
+		6239B08D1B6735FC0063AC08 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B08A1B6735FC0063AC08 /* AMapSearchKit.framework */; };
+		6239B08E1B6735FC0063AC08 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B08B1B6735FC0063AC08 /* MAMapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6239B0601B6735570063AC08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6239B03E1B6735570063AC08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6239B0451B6735570063AC08;
+			remoteInfo = YGaoDeMapUtilsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6239B0461B6735570063AC08 /* YGaoDeMapUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YGaoDeMapUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6239B04A1B6735570063AC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6239B04B1B6735570063AC08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6239B04D1B6735570063AC08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6239B04E1B6735570063AC08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6239B0501B6735570063AC08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6239B0511B6735570063AC08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6239B0541B6735570063AC08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6239B0561B6735570063AC08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6239B0591B6735570063AC08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6239B05F1B6735570063AC08 /* YGaoDeMapUtilsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YGaoDeMapUtilsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6239B0641B6735570063AC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6239B0651B6735570063AC08 /* YGaoDeMapUtilsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGaoDeMapUtilsDemoTests.m; sourceTree = "<group>"; };
+		6239B06F1B6735950063AC08 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		6239B0711B6735990063AC08 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6239B0731B67359D0063AC08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6239B0751B6735A10063AC08 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6239B0771B6735A50063AC08 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6239B0811B6735E20063AC08 /* YGaoDeMapUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGaoDeMapUtils.h; sourceTree = "<group>"; };
+		6239B0821B6735E20063AC08 /* YGaoDeMapUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGaoDeMapUtils.m; sourceTree = "<group>"; };
+		6239B0831B6735E20063AC08 /* YLocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLocationInfo.h; sourceTree = "<group>"; };
+		6239B0841B6735E20063AC08 /* YLocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLocationInfo.m; sourceTree = "<group>"; };
+		6239B0891B6735FC0063AC08 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		6239B08A1B6735FC0063AC08 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		6239B08B1B6735FC0063AC08 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6239B0431B6735570063AC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6239B0781B6735A50063AC08 /* MapKit.framework in Frameworks */,
+				6239B0761B6735A10063AC08 /* CoreFoundation.framework in Frameworks */,
+				6239B08E1B6735FC0063AC08 /* MAMapKit.framework in Frameworks */,
+				6239B08D1B6735FC0063AC08 /* AMapSearchKit.framework in Frameworks */,
+				6239B0741B67359D0063AC08 /* CoreLocation.framework in Frameworks */,
+				6239B0721B6735990063AC08 /* libz.dylib in Frameworks */,
+				6239B0701B6735950063AC08 /* libstdc++.6.0.9.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6239B05C1B6735570063AC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6239B03D1B6735570063AC08 = {
+			isa = PBXGroup;
+			children = (
+				6239B0771B6735A50063AC08 /* MapKit.framework */,
+				6239B0751B6735A10063AC08 /* CoreFoundation.framework */,
+				6239B0731B67359D0063AC08 /* CoreLocation.framework */,
+				6239B0711B6735990063AC08 /* libz.dylib */,
+				6239B06F1B6735950063AC08 /* libstdc++.6.0.9.dylib */,
+				6239B0481B6735570063AC08 /* YGaoDeMapUtilsDemo */,
+				6239B0621B6735570063AC08 /* YGaoDeMapUtilsDemoTests */,
+				6239B0471B6735570063AC08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6239B0471B6735570063AC08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0461B6735570063AC08 /* YGaoDeMapUtilsDemo.app */,
+				6239B05F1B6735570063AC08 /* YGaoDeMapUtilsDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6239B0481B6735570063AC08 /* YGaoDeMapUtilsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0871B6735FC0063AC08 /* Lib */,
+				6239B0801B6735E20063AC08 /* YGaoDeMapUtils */,
+				6239B04D1B6735570063AC08 /* AppDelegate.h */,
+				6239B04E1B6735570063AC08 /* AppDelegate.m */,
+				6239B0501B6735570063AC08 /* ViewController.h */,
+				6239B0511B6735570063AC08 /* ViewController.m */,
+				6239B0531B6735570063AC08 /* Main.storyboard */,
+				6239B0561B6735570063AC08 /* Images.xcassets */,
+				6239B0581B6735570063AC08 /* LaunchScreen.xib */,
+				6239B0491B6735570063AC08 /* Supporting Files */,
+			);
+			path = YGaoDeMapUtilsDemo;
+			sourceTree = "<group>";
+		};
+		6239B0491B6735570063AC08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6239B04A1B6735570063AC08 /* Info.plist */,
+				6239B04B1B6735570063AC08 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6239B0621B6735570063AC08 /* YGaoDeMapUtilsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0651B6735570063AC08 /* YGaoDeMapUtilsDemoTests.m */,
+				6239B0631B6735570063AC08 /* Supporting Files */,
+			);
+			path = YGaoDeMapUtilsDemoTests;
+			sourceTree = "<group>";
+		};
+		6239B0631B6735570063AC08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0641B6735570063AC08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6239B0801B6735E20063AC08 /* YGaoDeMapUtils */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0811B6735E20063AC08 /* YGaoDeMapUtils.h */,
+				6239B0821B6735E20063AC08 /* YGaoDeMapUtils.m */,
+				6239B0831B6735E20063AC08 /* YLocationInfo.h */,
+				6239B0841B6735E20063AC08 /* YLocationInfo.m */,
+			);
+			path = YGaoDeMapUtils;
+			sourceTree = "<group>";
+		};
+		6239B0871B6735FC0063AC08 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0881B6735FC0063AC08 /* GaoDe2.4.0 */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		6239B0881B6735FC0063AC08 /* GaoDe2.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				6239B0891B6735FC0063AC08 /* AMap.bundle */,
+				6239B08A1B6735FC0063AC08 /* AMapSearchKit.framework */,
+				6239B08B1B6735FC0063AC08 /* MAMapKit.framework */,
+			);
+			path = GaoDe2.4.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6239B0451B6735570063AC08 /* YGaoDeMapUtilsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6239B0691B6735570063AC08 /* Build configuration list for PBXNativeTarget "YGaoDeMapUtilsDemo" */;
+			buildPhases = (
+				6239B0421B6735570063AC08 /* Sources */,
+				6239B0431B6735570063AC08 /* Frameworks */,
+				6239B0441B6735570063AC08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YGaoDeMapUtilsDemo;
+			productName = YGaoDeMapUtilsDemo;
+			productReference = 6239B0461B6735570063AC08 /* YGaoDeMapUtilsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6239B05E1B6735570063AC08 /* YGaoDeMapUtilsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6239B06C1B6735570063AC08 /* Build configuration list for PBXNativeTarget "YGaoDeMapUtilsDemoTests" */;
+			buildPhases = (
+				6239B05B1B6735570063AC08 /* Sources */,
+				6239B05C1B6735570063AC08 /* Frameworks */,
+				6239B05D1B6735570063AC08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6239B0611B6735570063AC08 /* PBXTargetDependency */,
+			);
+			name = YGaoDeMapUtilsDemoTests;
+			productName = YGaoDeMapUtilsDemoTests;
+			productReference = 6239B05F1B6735570063AC08 /* YGaoDeMapUtilsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6239B03E1B6735570063AC08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = lizy;
+				TargetAttributes = {
+					6239B0451B6735570063AC08 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					6239B05E1B6735570063AC08 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 6239B0451B6735570063AC08;
+					};
+				};
+			};
+			buildConfigurationList = 6239B0411B6735570063AC08 /* Build configuration list for PBXProject "YGaoDeMapUtilsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6239B03D1B6735570063AC08;
+			productRefGroup = 6239B0471B6735570063AC08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6239B0451B6735570063AC08 /* YGaoDeMapUtilsDemo */,
+				6239B05E1B6735570063AC08 /* YGaoDeMapUtilsDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6239B0441B6735570063AC08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6239B0551B6735570063AC08 /* Main.storyboard in Resources */,
+				6239B05A1B6735570063AC08 /* LaunchScreen.xib in Resources */,
+				6239B08C1B6735FC0063AC08 /* AMap.bundle in Resources */,
+				6239B0571B6735570063AC08 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6239B05D1B6735570063AC08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6239B0421B6735570063AC08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6239B0521B6735570063AC08 /* ViewController.m in Sources */,
+				6239B04F1B6735570063AC08 /* AppDelegate.m in Sources */,
+				6239B04C1B6735570063AC08 /* main.m in Sources */,
+				6239B0851B6735E20063AC08 /* YGaoDeMapUtils.m in Sources */,
+				6239B0861B6735E20063AC08 /* YLocationInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6239B05B1B6735570063AC08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6239B0661B6735570063AC08 /* YGaoDeMapUtilsDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6239B0611B6735570063AC08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6239B0451B6735570063AC08 /* YGaoDeMapUtilsDemo */;
+			targetProxy = 6239B0601B6735570063AC08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6239B0531B6735570063AC08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6239B0541B6735570063AC08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6239B0581B6735570063AC08 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6239B0591B6735570063AC08 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6239B0671B6735570063AC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6239B0681B6735570063AC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6239B06A1B6735570063AC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YGaoDeMapUtilsDemo/GaoDe2.4.0",
+					"$(PROJECT_DIR)/YGaoDeMapUtilsDemo/Lib/GaoDe2.4.0",
+				);
+				INFOPLIST_FILE = YGaoDeMapUtilsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6239B06B1B6735570063AC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YGaoDeMapUtilsDemo/GaoDe2.4.0",
+					"$(PROJECT_DIR)/YGaoDeMapUtilsDemo/Lib/GaoDe2.4.0",
+				);
+				INFOPLIST_FILE = YGaoDeMapUtilsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6239B06D1B6735570063AC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YGaoDeMapUtilsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YGaoDeMapUtilsDemo.app/YGaoDeMapUtilsDemo";
+			};
+			name = Debug;
+		};
+		6239B06E1B6735570063AC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YGaoDeMapUtilsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YGaoDeMapUtilsDemo.app/YGaoDeMapUtilsDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6239B0411B6735570063AC08 /* Build configuration list for PBXProject "YGaoDeMapUtilsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6239B0671B6735570063AC08 /* Debug */,
+				6239B0681B6735570063AC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6239B0691B6735570063AC08 /* Build configuration list for PBXNativeTarget "YGaoDeMapUtilsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6239B06A1B6735570063AC08 /* Debug */,
+				6239B06B1B6735570063AC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6239B06C1B6735570063AC08 /* Build configuration list for PBXNativeTarget "YGaoDeMapUtilsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6239B06D1B6735570063AC08 /* Debug */,
+				6239B06E1B6735570063AC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6239B03E1B6735570063AC08 /* Project object */;
+}
