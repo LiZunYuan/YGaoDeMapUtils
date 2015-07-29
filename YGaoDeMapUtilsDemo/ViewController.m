@@ -7,14 +7,34 @@
 //
 
 #import "ViewController.h"
-#import <MapKit/MapKit.h>
 
-@interface ViewController ()<MKMapViewDelegate>
+
+
+
+
+@interface ViewController ()
 
 @end
 
 @implementation ViewController{
-        MKMapView *mapView;
+    
 }
+
+
+-(instancetype)init
+{
+    self = [super init];
+    if(self){
+        
+    }
+    return self;
+}
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+}
+
+
 
 @end

@@ -237,11 +237,9 @@ static char gaoDeMapToolArrayKey;
     
     request.searchType          = AMapSearchType_PlaceKeyword;
     request.keywords            = keyword;
-    NSString* cityStr = cityInfo;
-    if(cityStr == nil){
-        cityStr = @"010";
+    if(cityInfo != nil){
+        request.city = @[cityInfo];//010
     }
-    request.city                = @[cityStr];//010
     request.requireExtension    = _requireExtension;
     _search=[[AMapSearchAPI alloc] initWithSearchKey:[MAMapServices sharedServices].apiKey Delegate:self];
     
@@ -266,11 +264,9 @@ static char gaoDeMapToolArrayKey;
     
     request.searchType          = AMapSearchType_PlaceAround;
     request.location           = [AMapGeoPoint locationWithLatitude:[latitude floatValue] longitude:[longitude floatValue]];
-    NSString* cityStr = cityInfo;
-    if(cityStr == nil){
-        cityStr = @"010";
+    if(cityInfo != nil){
+        request.city                = @[cityInfo];//010
     }
-    request.city                = @[cityStr];//010
     request.requireExtension    = _requireExtension;
     if(_search == nil){
         _search=[[AMapSearchAPI alloc] initWithSearchKey:[MAMapServices sharedServices].apiKey Delegate:self];

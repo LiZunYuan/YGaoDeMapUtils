@@ -25,6 +25,10 @@
 		6239B08D1B6735FC0063AC08 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B08A1B6735FC0063AC08 /* AMapSearchKit.framework */; };
 		6239B08E1B6735FC0063AC08 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B08B1B6735FC0063AC08 /* MAMapKit.framework */; };
 		62771D6D1B68604C00B7AF67 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 62771D6C1B68604C00B7AF67 /* README.md */; };
+		62771D701B686BCF00B7AF67 /* YTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62771D6F1B686BCF00B7AF67 /* YTableViewController.m */; };
+		62771D761B68709B00B7AF67 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 62771D721B68709B00B7AF67 /* LICENSE */; };
+		62771D771B68709B00B7AF67 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62771D741B68709B00B7AF67 /* MBProgressHUD.m */; };
+		62771D781B68709B00B7AF67 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 62771D751B68709B00B7AF67 /* README.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,12 @@
 		6239B08B1B6735FC0063AC08 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		62771D6A1B67B42100B7AF67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		62771D6C1B68604C00B7AF67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		62771D6E1B686BCF00B7AF67 /* YTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTableViewController.h; sourceTree = "<group>"; };
+		62771D6F1B686BCF00B7AF67 /* YTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTableViewController.m; sourceTree = "<group>"; };
+		62771D721B68709B00B7AF67 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		62771D731B68709B00B7AF67 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		62771D741B68709B00B7AF67 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		62771D751B68709B00B7AF67 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,8 @@
 				6239B04E1B6735570063AC08 /* AppDelegate.m */,
 				6239B0501B6735570063AC08 /* ViewController.h */,
 				6239B0511B6735570063AC08 /* ViewController.m */,
+				62771D6E1B686BCF00B7AF67 /* YTableViewController.h */,
+				62771D6F1B686BCF00B7AF67 /* YTableViewController.m */,
 				6239B0531B6735570063AC08 /* Main.storyboard */,
 				6239B0561B6735570063AC08 /* Images.xcassets */,
 				6239B0581B6735570063AC08 /* LaunchScreen.xib */,
@@ -174,6 +186,7 @@
 		6239B0871B6735FC0063AC08 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				62771D711B68709B00B7AF67 /* MBProgressHUD */,
 				6239B0881B6735FC0063AC08 /* GaoDe2.4.0 */,
 			);
 			path = Lib;
@@ -187,6 +200,17 @@
 				6239B08B1B6735FC0063AC08 /* MAMapKit.framework */,
 			);
 			path = GaoDe2.4.0;
+			sourceTree = "<group>";
+		};
+		62771D711B68709B00B7AF67 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				62771D721B68709B00B7AF67 /* LICENSE */,
+				62771D731B68709B00B7AF67 /* MBProgressHUD.h */,
+				62771D741B68709B00B7AF67 /* MBProgressHUD.m */,
+				62771D751B68709B00B7AF67 /* README.mdown */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +302,7 @@
 				6239B05A1B6735570063AC08 /* LaunchScreen.xib in Resources */,
 				6239B08C1B6735FC0063AC08 /* AMap.bundle in Resources */,
 				6239B0571B6735570063AC08 /* Images.xcassets in Resources */,
+				62771D761B68709B00B7AF67 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62771D781B68709B00B7AF67 /* README.mdown in Sources */,
 				62771D6D1B68604C00B7AF67 /* README.md in Sources */,
 				6239B0521B6735570063AC08 /* ViewController.m in Sources */,
 				6239B04F1B6735570063AC08 /* AppDelegate.m in Sources */,
+				62771D701B686BCF00B7AF67 /* YTableViewController.m in Sources */,
 				6239B04C1B6735570063AC08 /* main.m in Sources */,
 				6239B0851B6735E20063AC08 /* YGaoDeMapUtils.m in Sources */,
 				6239B0861B6735E20063AC08 /* YLocationInfo.m in Sources */,
+				62771D771B68709B00B7AF67 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
