@@ -37,7 +37,7 @@ typedef void (^YGaoDeMapPOISuccessBlock)(NSArray* poiArray);
 
 
 /**
- *  //获得用户当前位置信息 只有经纬度
+ *  //获得用户当前位置信息 只有经纬度 (方法执行很快，不需要请求网络)
  *
  *  @param successBlock 成功返回
  *  @param failureBlock 失败返回

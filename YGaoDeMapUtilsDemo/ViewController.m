@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface ViewController ()
+@interface ViewController ()<MKMapViewDelegate>
 
 @end
 
-@implementation ViewController
-
+@implementation ViewController{
+        MKMapView *mapView;
+}
 
 @end

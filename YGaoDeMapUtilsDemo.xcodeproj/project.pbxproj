@@ -24,6 +24,7 @@
 		6239B08C1B6735FC0063AC08 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6239B0891B6735FC0063AC08 /* AMap.bundle */; };
 		6239B08D1B6735FC0063AC08 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B08A1B6735FC0063AC08 /* AMapSearchKit.framework */; };
 		6239B08E1B6735FC0063AC08 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6239B08B1B6735FC0063AC08 /* MAMapKit.framework */; };
+		62771D6D1B68604C00B7AF67 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 62771D6C1B68604C00B7AF67 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		6239B0891B6735FC0063AC08 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		6239B08A1B6735FC0063AC08 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
 		6239B08B1B6735FC0063AC08 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		62771D6A1B67B42100B7AF67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		62771D6C1B68604C00B7AF67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 		6239B03D1B6735570063AC08 = {
 			isa = PBXGroup;
 			children = (
+				62771D6A1B67B42100B7AF67 /* CoreGraphics.framework */,
 				6239B0771B6735A50063AC08 /* MapKit.framework */,
 				6239B0751B6735A10063AC08 /* CoreFoundation.framework */,
 				6239B0731B67359D0063AC08 /* CoreLocation.framework */,
@@ -132,6 +136,7 @@
 		6239B0491B6735570063AC08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62771D6C1B68604C00B7AF67 /* README.md */,
 				6239B04A1B6735570063AC08 /* Info.plist */,
 				6239B04B1B6735570063AC08 /* main.m */,
 			);
@@ -233,6 +238,11 @@
 				TargetAttributes = {
 					6239B0451B6735570063AC08 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6239B05E1B6735570063AC08 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -285,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62771D6D1B68604C00B7AF67 /* README.md in Sources */,
 				6239B0521B6735570063AC08 /* ViewController.m in Sources */,
 				6239B04F1B6735570063AC08 /* AppDelegate.m in Sources */,
 				6239B04C1B6735570063AC08 /* main.m in Sources */,
@@ -498,6 +509,7 @@
 				6239B06B1B6735570063AC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6239B06C1B6735570063AC08 /* Build configuration list for PBXNativeTarget "YGaoDeMapUtilsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +518,7 @@
 				6239B06E1B6735570063AC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
